@@ -22,7 +22,7 @@
             <h1 class="visually-hidden">Город Седона ждет вас</h1>
             <section class="welcome">
                 <h2 class="visually-hidden">Приветствие</h2>
-                <img src="img/description.svg" width="459" height="353" alt="Приглашаем в Седону"><br>  		  
+                <img src="img/description.svg" width="459" height="353" alt="Приглашаем в Седону"><br> 		  
       		    <b class="welcome-lid">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
             </section>
       		<section class="features">
@@ -82,17 +82,50 @@
       		<section class="interested">
       			<h2>Заинтересовались?</h2>
       			<p class="interested-info">
-      				 Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-      			</p>
-      			<!--Дальше будет форма-->
-      		</section>  			
+      				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      			</p>      			
+      		</section>
+            <section class="search-hotels">
+                <h2>Поиск гостиницы в Седоне</h2>
+                <form class="search-hotels-form" action="https://" method="post">
+                    <p>
+                        <label for="date-arrival">Дата заезда:</label>                
+                        <input type="text" name="date-arrival" id="date-arrival" placeholder="24 апреля 2017">
+                    </p>
+                    <p>
+                        <label for="date-departure">Дата выезда:</label> 
+                        <input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017">
+                    </p>
+                    <p>
+                        <label for="adults">Взрослые:</label>
+                        <input type="number" name="adults" id="adults" placeholder="2">
+                    </p>
+                    <p>
+                        <label for="childrens">Дети:</label>
+                        <input type="number" name="childrens" id="childrens" placeholder="0">
+                    </p>
+                    <button type="submit">Найти</button>
+                </form>
+            </section>
+            <section class="map">
+                <h2 class="visually-hidden">Расположение на карте</h2>
+                <p>
+                  <img src="img/map.jpg" width="1200" height="593" alt="Город Седона расположен в штате Аризона в США">
+                </p>
+            </section>			
       	</main>
       	<footer class="main-footer">
       		<p>#visitSEDONA</p>	  		
       		<ul class="footer-social">
-      			<li><a class="social-button" href="https://twitter.com/?lang=ru">Twitter</a></li>
-            	<li><a class="social-button" href="https://www.facebook.com">Fb</a></li>
-            	<li><a class="social-button" href="https://www.youtube.com">Youtube</a></li>
+      			<li>
+                    <a class="social-button" href="https://twitter.com/?lang=ru"><span class="visually-hidden">Седона в Твиттере</span></a>
+                </li>
+                <li>
+                    <a class="social-button" href="https://www.facebook.com"><span class="visually-hidden">Седона в Фейсбуке</span></a>
+                </li>
+            	<li>
+                    <a class="social-button" href="https://www.youtube.com"><span class="visually-hidden">Седона на Ютубе</span></a>
+                </li>
             </ul>
             <p class="copyright">
                 <b>Website by</b>
@@ -101,27 +134,7 @@
                 </a>
             </p>  			
       	</footer>
-
-        <section class="modal modal-find">
-            <h2>Поиск гостиницы в Седоне</h2>
-            <p>
-                Дата заезда: 24 апреля 2017
-            </p>   
-            <p>
-                Дата выезда: 4 июля 2017
-            </p> 
-            <p>
-                Взрослые: 2
-            </p>
-             <p>
-                Дети: 0
-            </p> 
-            <button>Найти</button>     
-        </section>
-        <section class="modal modal-map">
-            <h2 class="visually-hidden">Расположение на карте</h2>
-            <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения города">
-        </section>
+        
 
         <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 
