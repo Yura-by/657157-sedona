@@ -8,7 +8,7 @@
 		<header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
-                    <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип города Седона">
+                    <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
                 </a>
                 <ul class="site-navigation">
                     <li><a href="info.html">Информация</a></li>
@@ -19,7 +19,9 @@
             </nav>
         </header> 
         <main class="container">
+
   		    <h1 class="visually-hidden">Гостиницы</h1>
+
   		    <section class="filter">
                 <h2 class="visually-hidden">Фильтр выбора гостиницы</h2>
                 <form class="filter-form" action="https://" method="get">
@@ -71,91 +73,98 @@
                     <button type="submit" class="button-submit">Показать</button>
                 </form>               
   		    </section>
-            <section class="result-block">
-                <h2 class="visually-hidden">Результ выбора фильтра</h2>
-                <section class="result-sorting">
-                    <h3 class="visually-hidden">Сортировка результата выбора фильтра</h3>
-                    <b>Найдено 3:</b>
-                    <h4>Сортировка</h4>
-                    <ul>
-                        <li class="result-sorting-item">По цене</li>
-                        <li class="result-sorting-item">По типу</li>
-                        <li class="result-sorting-item">По рейтингу</li>
-                    </ul>
-                    <button type="button"><span class="visually-hidden">Кнопка сортировки вниз</span></button>
-                    <button type="button"><span class="visually-hidden">Кнопка сортировки вверх</span></button>
-                </section>            
-      		    <section class="result-hotels">
-                    <h3 class="visually-hidden">Подходящие отели</h3>
-                    <ul class="result-hotels-list">
-                        <li class="result-hotels-item">
-                            <a href="hotel-item.html">
-                                <h4>Amara Resort & Spa</h4>                        
-                                <img src="img/amara.jpg" width="135" height="90" alt="Амара ресорт">
-                            </a>
-                            <p>
-      						    <span>Гостиница</span>
-      						    <span>От 4000 Р.</span>
-                            </p>
-                            <p>
-      						    <a class="btn-more" href="detail.html">Подробнее</a>
-      						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <span class="rating">Рейтинг: 8,5</span>
-                        </li>
-                        <li class="result-hotels-item">
-                            <a href="hotel-item.html">
-                                <h4>Desert Qualil Inn</h4>                        
-                                <img src="img/desert.jpg" width="135" height="90" alt="Десерт">
-                            </a>
-                            <p>
-      						    <span>Мотель</span>
-      						    <span>От 3000 Р.</span>
-                            </p>
-                            <p>
-      						    <a class="btn-more" href="detail.html">Подробнее</a>
-      						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <span class="rating">Рейтинг: 8,9</span>
-                        </li>
-                        <li class="result-hotels-item">
-                            <a href="hotel-item.html">
-                                <h4>Villas at Poco Diablo</h4>                        
-                                <img src="img/villas.jpg" width="135" height="90" alt="Виллас">
-                            </a>
-                            <p>
-                                <span>Апартаменты</span>
-      						    <span>От 2000 Р.</span>
-                            </p>
-                            <p>
-      						    <a class="btn-more" href="detail.html">Подробнее</a>
-      						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <span class="rating">Рейтинг: 9,2</span>
-                        </li>
-                    </ul>
-                </section>
-            </section>            
+            
+            <section class="sub-filter">
+                <h2 class="visually-hidden">Сортировка результата выбора фильтра</h2>
+                <b>Найдено 3:</b>
+                <h3>Сортировка:</h3>
+                <ul class="sub-filter-list">
+                    <li class="sub-filter-item"><a href="#">По цене</a></li>
+                    <li class="sub-filter-item"><a href="#">По типу</a></li>
+                    <li class="sub-filter-item"><a href="#">По рейтингу</a></li>
+                </ul>
+                <p>
+                    <a href="#"><span class="visually-hidden">Вниз</span></a>
+                    <a href="#"><span class="visually-hidden">Вверх</span></a>
+                </p>
+            </section> 
+
+  		    <section class="result">
+                <h2 class="visually-hidden">Подходящие отели</h2>
+                <ul class="result-list">
+                    <li class="result-item">
+                        <a href="hotel-item.html">
+                            <h3>Amara Resort & Spa</h3>                        
+                            <img src="img/amara.jpg" width="135" height="90" alt="Амара ресорт">
+                        </a>
+                        <p>
+  						    <span>Гостиница</span>
+  						    <span>От 4000 Р.</span>
+                        </p>
+                        <p>
+  						    <a class="btn-more" href="detail.html">Подробнее</a>
+  						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
+                        </p>
+                        <p class="rating">Рейтинг: 8,5</p>
+                    </li>
+                    <li class="result-item">
+                        <a href="hotel-item.html">
+                            <h3>Desert Qualil Inn</h3>                        
+                            <img src="img/desert.jpg" width="135" height="90" alt="Десерт">
+                        </a>
+                        <p>
+  						    <span>Мотель</span>
+  						    <span>От 3000 Р.</span>
+                        </p>
+                        <p>
+  						    <a class="btn-more" href="detail.html">Подробнее</a>
+  						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
+                        </p>
+                        <p class="rating">Рейтинг: 8,9</p>
+                    </li>
+                    <li class="result-item">
+                        <a href="hotel-item.html">
+                            <h3>Villas at Poco Diablo</h3>                        
+                            <img src="img/villas.jpg" width="135" height="90" alt="Виллас">
+                        </a>
+                        <p>
+                            <span>Апартаменты</span>
+  						    <span>От 2000 Р.</span>
+                        </p>
+                        <p>
+  						    <a class="btn-more" href="detail.html">Подробнее</a>
+  						    <a class="btn-to-book" href="to-book.html">Забронировать</a>
+                        </p>
+                        <p class="rating">Рейтинг: 9,2</p>
+                    </li>
+                </ul>
+            </section>
+                        
         </main>
-  	<footer class="main-footer">
-  		<p>#visitSEDONA</p>	  		
-  		<ul class="footer-social">
-                <li>
-                    <a class="social-button" href="https://twitter.com/?lang=ru"><span class="visually-hidden">Седона в Твиттере</span></a>
-                </li>
-                <li>
-                    <a class="social-button" href="https://www.facebook.com"><span class="visually-hidden">Седона в Фейсбуке</span></a>
-                </li>
-                <li>
-                    <a class="social-button" href="https://www.youtube.com"><span class="visually-hidden">Седона на Ютубе</span></a>
-                </li>
-            </ul>
-        <p class="copyright">
-            <b>Website by</b>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-academy.svg" width="115" height="41" alt="Логотип htmlacademy">
-            </a>
-        </p>
-    </footer>
+      	<footer class="main-footer">
+      		<p>#visitSEDONA</p>	  		
+      		<ul class="footer-social">
+                    <li>
+                        <a class="social-button" href="https://twitter.com/?lang=ru"><span class="visually-hidden">Седона в Твиттере</span></a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="https://www.facebook.com"><span class="visually-hidden">Седона в Фейсбуке</span></a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="https://www.youtube.com"><span class="visually-hidden">Седона на Ютубе</span></a>
+                    </li>
+                </ul>
+            <p class="copyright">
+                <b>Website by</b>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo-academy.svg" width="115" height="41" alt="Логотип htmlacademy">
+                </a>
+            </p>
+        </footer>
+
+        <!--27.11.2018
+        1)секцию сортировки сделал отдельной, пропали везде h4, поменял название класса секции, все сделал ссылками в сортировке
+        2)в секции результата сократил название класса-->
+        
 	</body>
 </html>

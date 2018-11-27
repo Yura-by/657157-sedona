@@ -8,7 +8,7 @@
       	<header class="main-header">
       		<nav class="main-navigation">
       			<a class="main-header-logo">
-      				<img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип города Седона">
+      				<img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
       			</a>
       			<ul class="site-navigation">
       				<li><a href="info.html">Информация</a></li>
@@ -19,12 +19,15 @@
       		</nav>
       	</header>
       	<main class="container">
+
             <h1 class="visually-hidden">Город Седона ждет вас</h1>
+
             <section class="welcome">
                 <h2 class="visually-hidden">Приветствие</h2>
-                <img src="img/description.svg" width="459" height="353" alt="Приглашаем в Седону"><br> 		  
+                <img src="img/welcome.svg" width="459" height="353" alt="Приглашаем в Седону"><br> 		  
       		    <b class="welcome-lid">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
             </section>
+
       		<section class="features">
       			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
       			<ol class="features-list">
@@ -62,32 +65,35 @@
       				</li>
       			</ol>
       		</section>
-      		<section class="comfort">
-      			<h2 class="visually-hidden">Все необходимое</h2>
-      			<ul class="comfort-list">
-      				<li class="comfort-item">
+
+      		<section class="advantage">
+      			<h2 class="visually-hidden">Преимущества</h2>
+      			<ul class="advantage-list">
+      				<li class="advantage-item">
       					<h3>Жильё</h3>
       					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       				</li>
-      				<li class="comfort-item">
+      				<li class="advantage-item">
       					<h3>Еда</h3>
       					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       				</li>
-      				<li class="comfort-item">
+      				<li class="advantage-item">
       					<h3>Сувениры</h3>
       					<p>Не только китайского, но и местного производства!</p>
       				</li>
       			</ul> 		
       		</section>
-      		<section class="interested">
-      			<h2>Заинтересовались?</h2>
+
+      		<div class="interested">
+      			<b>Заинтересовались?</b>
       			<p class="interested-info">
       				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       			</p>      			
-      		</section>
-            <section class="search-hotels">
+      		</div>
+
+            <section class="search">
                 <h2>Поиск гостиницы в Седоне</h2>
-                <form class="search-hotels-form" action="https://" method="post">
+                <form class="search-form" action="https://" method="post">
                     <p>
                         <label for="date-arrival">Дата заезда:</label>                
                         <input type="text" name="date-arrival" id="date-arrival" placeholder="24 апреля 2017">
@@ -107,6 +113,7 @@
                     <button type="submit">Найти</button>
                 </form>
             </section>
+
             <section class="map">
                 <h2 class="visually-hidden">Расположение на карте</h2>
                 <p>
@@ -133,10 +140,16 @@
                     <img src="img/logo-academy.svg" width="115" height="41" alt="Логотип htmlacademy">
                 </a>
             </p>  			
-      	</footer>
-        
+      	</footer>        
 
         <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
+
+        <!--27.11.2018
+            1)добавил строку между секциями
+            2)укаратил название класса в поиске search
+            3)поменял название класса с comfort на advantage
+            4)поменял название изображения welcom
+            5)поменял section на div блок заинтересовались-->
 
     </body>
 </html>
