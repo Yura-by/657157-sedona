@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
       	<header class="main-header">
@@ -24,44 +27,39 @@
 
             <section class="welcome">
                 <h2 class="visually-hidden">Приветствие</h2>
-                <img src="img/welcome.svg" width="459" height="353" alt="Приглашаем в Седону"><br> 		  
-      		    <b class="welcome-lid">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-            </section>
+                <img src="img/welcome.svg" width="459" height="353" alt="Приглашаем в Седону">
+                <p class="welcome-lid">Седона - небольшой городок в Аризоне,<br>
+      		     заслуживающий большего!</p>
+      		</section>
 
       		<section class="features">
       			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
       			<ol class="features-list">
       				<li class="feature-item">
       					<h3>Настоящий городок</h3> 
-      					<p>-№1-<br>
-                            Седона - не аттракцион для туристов, там течет своя жизнь
-      					</p>
+      					<p>-№1-</p>
+                        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       				    <img class="feature-life" src="img/life.jpg" width="800" height="256" alt="Седона внутри">
       				</li>
       				<li class="feature-item">
       					<h3>Там есть мост дьявола</h3> 
-      					<p>-№2-<br>
-                            Да, по нему можно пройти! Если конечно вы осмелитесь
-      					</p>
+      					<p>-№2-</p>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       					<img class="feature-bridge" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
       				</li>
       				<li class="feature-item">
       					<h3>Небольшая площадь</h3> 
-      					<p>-№3-<br>
-                            Все достопримечательности находятся очень близко
-      					</p>
+      					<p>-№3-</p>
+                        <p>Все достопримечательности находятся очень близко</p>
       				</li>
       				<li class="feature-item">
       					<h3>Красивая дорога</h3> 
-      					<p>-№4-<br>
-      					 	Ехать в Седону из Лас-Вегаса совсем не скучно
-      					</p>
+      					<p>-№4-</p>
+                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
       				</li>
       				<li class="feature-item">
       					<h3>Мало туристов</h3> 
-      					<p>-№5-<br>
-      					 	Большинство едет в гранд каньон и толпится там
-      					</p>
+      					<p>-№5-</p>Большинство едет в гранд каньон и толпится там</p>
       				</li>
       			</ol>
       		</section>
@@ -85,14 +83,13 @@
       		</section>
 
       		<div class="interested">
-      			<b>Заинтересовались?</b>
-      			<p class="interested-info">
-      				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-      			</p>      			
+      			<p class="interested-question">Заинтересовались?</p>
+      			<p class="interested-info">Укажите предполагаемые даты поездки,<br>
+                и мы покажем вам лучшие предложения гостиниц в Седоне</p>      			
       		</div>
 
-            <section class="search">
-                <h2>Поиск гостиницы в Седоне</h2>
+            <section class="search">                
+                <button class="button button-open" type="button">Поиск гостиницы в Седоне</button>
                 <form class="search-form" action="https://" method="post">
                     <p>
                         <label for="date-arrival">Дата заезда:</label>                
@@ -109,8 +106,8 @@
                     <p>
                         <label for="childrens">Дети:</label>
                         <input type="number" name="childrens" id="childrens" placeholder="0">
-                    </p>
-                    <button type="submit">Найти</button>
+                    </p>               
+                    <button class="button button-find" type="submit">Найти</button>
                 </form>
             </section>
 
@@ -122,7 +119,7 @@
             </section>			
       	</main>
       	<footer class="main-footer">
-      		<p>#visitSEDONA</p>	  		
+      		<p class="hashtag">#visitSEDONA</p>	  		
       		<ul class="footer-social">
       			<li>
                     <a class="social-button" href="https://twitter.com/?lang=ru"><span class="visually-hidden">Седона в Твиттере</span></a>
@@ -136,20 +133,14 @@
             </ul>
             <p class="copyright">
                 <b>Website by</b>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="img/logo-academy.svg" width="115" height="41" alt="Логотип htmlacademy">
                 </a>
-            </p>  			
+            </p>
       	</footer>        
 
         <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 
-        <!--27.11.2018
-            1)добавил строку между секциями
-            2)укаратил название класса в поиске search
-            3)поменял название класса с comfort на advantage
-            4)поменял название изображения welcom
-            5)поменял section на div блок заинтересовались-->
-
+        
     </body>
 </html>

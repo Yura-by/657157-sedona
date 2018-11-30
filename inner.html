@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Гостиницы Седоны</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
@@ -14,7 +17,7 @@
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="photos.html">Фото и видео</a></li>
                     <li><a href="state-map.html">Карта штата</a></li>
-                    <li class="site-navigation-current"><a>Гостиницы</a></li>
+                    <li class="site-navigation-current">Гостиницы</li>
                 </ul>
             </nav>
         </header> 
@@ -74,10 +77,11 @@
                 </form>               
   		    </section>
             
-            <section class="sub-filter">
-                <h2 class="visually-hidden">Сортировка результата выбора фильтра</h2>
-                <b>Найдено 3:</b>
-                <h3>Сортировка:</h3>
+            <div class="sub-filter"> 
+            	<p>               
+                	<b>Найдено 3:</b>
+                	<span>Сортировка:</span>
+            	</p>
                 <ul class="sub-filter-list">
                     <li class="sub-filter-item"><a href="#">По цене</a></li>
                     <li class="sub-filter-item"><a href="#">По типу</a></li>
@@ -87,7 +91,7 @@
                     <a href="#"><span class="visually-hidden">Вниз</span></a>
                     <a href="#"><span class="visually-hidden">Вверх</span></a>
                 </p>
-            </section> 
+            </div> 
 
   		    <section class="result">
                 <h2 class="visually-hidden">Подходящие отели</h2>
@@ -162,9 +166,8 @@
             </p>
         </footer>
 
-        <!--27.11.2018
-        1)секцию сортировки сделал отдельной, пропали везде h4, поменял название класса секции, все сделал ссылками в сортировке
-        2)в секции результата сократил название класса-->
+        <!--28.11.2018
+        1)изменил на див сортировку после фильтра-->
         
 	</body>
 </html>

@@ -1,0 +1,308 @@
+body {
+	margin: 0;	
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 1);
+	text-transform: uppercase;
+
+	background-color: rgba(255, 255, 255, 1);	
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {	
+	line-height: 26px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 1);
+
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: rgba(0, 0, 0, 1);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: rgba(129, 179, 210, 1);
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 1);
+	text-align: center;
+
+	background-color: rgba(32, 50, 64, 1);
+	background-image: 	url("../img/intro-mask.svg"),
+						url("../img/bg.jpg");
+	background-position: center bottom, center top;
+	background-repeat: no-repeat, no-repeat;	
+}
+
+.welcome-lid {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.features h2 {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.features-list,
+.advantage-list {
+	list-style: none;
+}
+
+.feature-item {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+
+	background-color: rgba(129, 179, 210, 1);
+	
+}
+
+.feature-item h3,
+.advantage-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;		
+}
+
+.advantage-item {
+	color: rgba(0, 0, 0, 1);
+	text-align: center;
+
+	background-color: rgba(238, 238, 238, 1);
+	
+}
+
+.interested {
+	color: rgba(0, 0, 0, 1);
+	text-align: center;
+
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.interested-question {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.interested-info {
+	line-height: 24px;
+}
+
+.search {
+	line-height: 26px;
+	font-weight: 700;
+	color: rgba(0, 0, 0 1);
+	text-align: center;
+
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.search input {
+	font: inherit;
+	text-transform: uppercase;
+
+	background-color: rgba(242, 242, 242, 1);
+	
+}
+
+.search input:hover {
+	background-color: rgba(235, 235, 235, 1);
+}
+
+.search input:focus {
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(229, 229, 229, 1);
+	outline: none;
+}
+
+
+/*Цвет placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 1);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 1);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.button {
+	font-size: 21px;
+	line-height: 26px;	
+	font-weight: 700;
+
+	color: rgba(255, 255, 255, 1);
+  	text-align: center;  	
+ 	vertical-align: middle;
+  	text-transform: uppercase;
+  	
+  	border: none;
+}
+
+.button-open {
+	background-color: rgba(118, 99, 87, 1);
+}
+
+.button-open:hover,
+.button-open:focus {	
+	background-color: rgba(98, 78, 67, 1);
+}
+
+.button-open:active {
+	background-color: rgba(80, 62, 51, 1);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-find {
+	background-color: rgba(129, 179, 210, 1);
+}
+ 
+.button-find:hover,
+.button-find:focus {	
+	background-color: rgba(102, 158, 192);
+}
+
+.button-find:active {
+	background-color: rgba(84, 150, 189, 1);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer .hashtag {
+	font-size: 21px;
+	line-height: 26px;	
+	font-weight: 700;
+}
+
+.footer-social {
+	text-align: center;
+
+	list-style: none;
+}
+
+.social-button {
+	color: rgba(0, 0, 0, 1);
+}
+
+.social-button:hover,
+.social-button:focus{	
+}
+
+.social-button:active {	
+}
+
+.copyright b{
+	line-height: 26px;	
+
+	text-align: center;
+}
+
+.copyright-logo:hover,
+.copyright-logo:focus {	
+}
+
+.copyright-logo:active {	
+}
+
+
+/*Страница index закончилась дальше для inner */
+
+
+.inner-page .logo:hover,
+.inner-page .logo:focus {
+	background-color: rgba(96, 78, 67, 1);
+}
+
+.site-navigation-current {
+	color: rgba(118, 99, 87, 1);
+}
+
+.inner-page .result-list {
+	list-style: none;
+}
+
+.result-item a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 1);
+}
+
+.result-item a:hover,
+.result-item a:focus {
+	color: rgba(129, 179, 210, 1);
+}
+
+.result-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.result-item .btn-more {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 1);
+
+	background-color: rgba(129, 179, 210, 1);
+}
+
+.result-item .btn-more:hover,
+.result-item .btn-more:focus {
+	background-color: rgba(102, 158, 192, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.result-item .btn-more:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(84, 150, 189, 1);
+}
+
+.result-item .btn-to-book {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 1);
+
+	background-color: rgba(118, 99, 87, 1);
+}
+
+.result-item .btn-to-book:hover,
+.result-item .btn-to-book:focus {
+	background-color: rgba(96, 78, 67, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+.result-item .btn-to-book:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(80, 62, 51, 1);
+}
