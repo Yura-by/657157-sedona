@@ -99,7 +99,7 @@ a {
 }
 
 .welcome img {	
-	margin-bottom: 72px;
+	margin-bottom: 76px;
 }
 
 .welcome-lid {
@@ -107,6 +107,7 @@ a {
 	margin: 0;
 	padding: 60px 0 27px 0;	
 	position: relative;	
+	margin-top: -4px;
 }
 
 .welcome::before {
@@ -346,11 +347,11 @@ a {
 	width: 460px;
 }
 
-.search-item {
-	margin-bottom: 30px;
+.search-item {	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .search input {
@@ -366,6 +367,14 @@ a {
 
 .search-item input {
 	width: 346px;
+}
+
+.search-item:first-child {
+	margin-bottom: 30px;
+}
+
+.search-item:nth-child(2) {
+	margin-bottom: 28px;
 }
 
 .search-item:nth-child(3) input,
@@ -393,6 +402,76 @@ a {
 	background-color: rgba(255, 255, 255, 1);
 	border: 2px solid rgba(229, 229, 229, 1);
 	outline: none;
+}
+
+.calendar {
+	border: 0;	
+	position: absolute;
+	background-color: transparent;
+	left: 422px;
+}
+
+.calendar path {
+	fill: rgba(202, 202, 202, 1);
+}
+
+.calendar:hover path,
+.calendar:focus path {
+	fill: rgba(0, 0, 0, 1);
+}
+
+.calendar:active path {
+	fill: rgba(129, 179, 210, 1);
+}
+
+.button-element {
+	position: absolute;
+	background-color: red;
+	border: none;
+	width: 11px;
+	height: 11px;
+}
+
+.cross {
+	background: transparent url("../img/cross.png") 50% 50% no-repeat;
+}
+
+.minus {
+	background: transparent url("../img/minus.png") 50% 50% no-repeat;
+}
+
+.adults-cross {
+	left: 200px;
+}
+
+.adults-minus {
+	left: 125px;
+}
+
+.childrens-minus {
+	left: 78px;
+} 
+
+.childrens-cross {
+	left: 153px;
+}
+
+.cross:hover,
+.cross:focus {
+	background: transparent url("../img/cross-hover.png") 50% 50% no-repeat;
+}
+
+.cross:active {
+	background: transparent url("../img/cross-active.png") 50% 50% no-repeat;
+}
+
+.minus:hover,
+.minus:focus {
+	background: transparent url("../img/minus-hover.png") 50% 50% no-repeat;
+}
+
+.minus:active {
+	background: transparent url("../img/minus-active.png") 50% 50% no-repeat;
 }
 
 
@@ -427,6 +506,8 @@ a {
 
 .button-find {
 	background-color: rgba(129, 179, 210, 1);
+	padding: 16px;
+	margin-top: 54px;
 }
  
 .button-find:hover,
@@ -504,6 +585,15 @@ a {
 	line-height: 26px;	
 	font-weight: 400;
 	margin-right: 3px;
+}
+
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+	fill: rgba(129, 179, 210, 1)
+}
+
+.copyright-logo:active path {
+	fill: rgba(189, 187, 188, 1)
 }
 
 .main-footer {	
