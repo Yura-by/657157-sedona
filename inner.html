@@ -33,16 +33,25 @@
                             <legend>Инфраструктура:</legend>
                             <ul>
                                 <li class="filer-form-option">
-                                    <input name="pool" type="checkbox" id="pool-form" checked>
-                                    <label for="pool-form">Бассейн</label>
+                                    <label class="filter-checkbox">
+                                        <input name="pool" type="checkbox" class="visually-hidden" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Бассейн
+                                    </label>
                                 </li>
                                 <li class="filer-form-option">
-                                    <input name="parking" type="checkbox" id="parking-form">
-                                    <label for="parking-form">Парковка</label>
+                                    <label class="filter-checkbox">
+                                        <input name="parking" type="checkbox" class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Парковка
+                                    </label>
                                 </li>
                                 <li class="filer-form-option">
-                                    <input name="wi-fi" type="checkbox" id="wi-fi-form">
-                                    <label for="wi-fi-form">Wi-Fi</label>
+                                    <label class="filter-checkbox">
+                                        <input name="wi-fi" type="checkbox" class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Wi-Fi
+                                    </label>
                                 </li>
                             </ul>                       
                         </fieldset>
@@ -50,16 +59,25 @@
                             <legend>Тип жилья:</legend>
                             <ul>
                                 <li class="filer-form-option">
-                                    <input name="hotel" type="checkbox" id="hotel-form" checked>
-                                    <label for="hotel-form">Гостиница</label>
+                                    <label class="filter-checkbox">
+                                        <input name="hotel" type="checkbox" class="visually-hidden" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Гостиница
+                                    </label>
                                 </li>
                                 <li class="filer-form-option">
-                                    <input name="motel" type="checkbox" id="motel-form" checked>
-                                    <label for="motel-form">Мотель</label>
+                                    <label class="filter-checkbox">
+                                        <input name="motel" type="checkbox" class="visually-hidden" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Мотель
+                                    </label>
                                 </li>
                                 <li class="filer-form-option">
-                                    <input name="apartments" type="checkbox" id="apartments-form" checked>
-                                    <label for="apartments-form">Апартаменты</label>
+                                    <label class="filter-checkbox">
+                                        <input name="apartments" type="checkbox" class="visually-hidden" checked>
+                                        Апартаменты
+                                        <span class="checkbox-indicator"></span>
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>                        
@@ -107,64 +125,90 @@
                     <h2 class="visually-hidden">Подходящие отели</h2>
                     <ul class="result-list">
                         <li class="result-item">
-                            <a class="hotel amara" href="hotel-item.html">
-                                <h3>Amara Resort & Spa</h3>                        
+                            <div class="inner-column">
                                 <img src="img/amara.jpg" width="135" height="90" alt="Амара ресорт">
-                            </a>
-                            <ul class="stars-list">
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>                                
-                            </ul>
-                            <p class="short-description">
-      						    <span>Гостиница</span>
-      						    <span>От 4000 Р.</span>
-                            </p>
-                            <p class="btn-container">
-      						    <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
-      						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <p class="rating">Рейтинг: 8,5</p>
+                                <div class="hotel-description">
+                                    <a class="hotel" href="hotel-item.html">
+                                        <h3>Amara Resort & Spa</h3>                
+                                    </a>                            
+                                    <div class="btn-container">
+                                        <p class="btn-item">
+                                            <span>Гостиница</span>
+              						        <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
+                                        </p>
+                                        <p class="btn-item">
+                                            <span>От 4000 Р.</span>
+                  						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-column">
+                                <ul class="stars-list">
+                                    <li class="star-item"></li>
+                                    <li class="star-item"></li>
+                                    <li class="star-item"></li>
+                                    <li class="star-item"></li>                                
+                                </ul>
+                                <p class="rating">Рейтинг: 8,5</p>                                
+                            </div>
                         </li>
                         <li class="result-item">
-                            <a class="hotel desert" href="hotel-item.html">
-                                <h3>Desert Quail Inn</h3>                        
+                            <div class="inner-column">
                                 <img src="img/desert.jpg" width="135" height="90" alt="Десерт">
-                            </a>
-                            <ul class="stars-list">
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>
-                            </ul>
-                            <p class="short-description">
-      						    <span>Мотель</span>
-      						    <span>От 3000 Р.</span>
-                            </p>
-                            <p class="btn-container">
-      						    <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
-      						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <p class="rating">Рейтинг: 8,9</p>
+                                <div class="hotel-description">
+                                    <a class="hotel" href="hotel-item.html">
+                                        <h3>Desert Quail Inn</h3>                      
+                                    </a>
+                                    <div class="btn-container">
+                                        <p class="btn-item">
+                  						    <span>Мотель</span>
+                                            <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
+                                        </p>
+                                        <p class="btn-item">
+                  						    <span>От 3000 Р.</span>
+                  						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-column">
+                                <ul class="stars-list">
+                                    <li class="star-item"></li>
+                                    <li class="star-item"></li>
+                                    <li class="star-item"></li>
+                                </ul>
+                                <p class="rating">Рейтинг: 8,9</p>                                
+                            </div>
                         </li>
                         <li class="result-item">
-                            <a class="hotel willas" href="hotel-item.html">
-                                <h3>Villas at Poco Diablo</h3>                        
+                            <div class="inner-column">
                                 <img src="img/villas.jpg" width="135" height="90" alt="Виллас">
-                            </a>
-                            <ul class="stars-list">
-                                <li class="star-item"></li>
-                                <li class="star-item"></li>                                
-                            </ul>
-                            <p class="short-description">
-                                <span>Апартаменты</span>
-      						    <span>От 2000 Р.</span>
-                            </p>
-                            <p class="btn-container">
-      						    <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
-      						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
-                            </p>
-                            <p class="rating">Рейтинг: 9,2</p>
+                                <div class="hotel-description">
+                                    <a class="hotel" href="hotel-item.html">
+                                        <h3>Villas at Poco Diablo</h3>                       
+                                    </a>                                
+                                    <div class="btn-container">
+                                        <p class="btn-item">
+                                            <span>Апартаменты</span>
+                                            <a class="inner-btn btn-more" href="detail.html">Подробнее</a>
+                  						    
+                                        </p>
+                                        <p class="btn-item">
+                  						    <span>От 2000 Р.</span>
+                  						    <a class="inner-btn btn-to-book" href="to-book.html">Забронировать</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-column">                                
+                                <ul class="stars-list">
+                                        <li class="star-item"></li>
+                                        <li class="star-item"></li>                                
+                                </ul>
+                                <p class="rating">Рейтинг: 9,2</p>
+                            </div>
+                            
                        </li>
                     </ul>
                 </section>
