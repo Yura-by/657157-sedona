@@ -331,6 +331,7 @@ a {
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 }
 
+
 .search-form {
     display: flex;
 
@@ -373,8 +374,8 @@ a {
     margin-bottom: 30px;
 }
 
-.search-item:nth-child(3) input,
-.search-item:nth-child(4) input {
+.search-item .search-people,
+.search-item .search-people {
     box-sizing: border-box;
     width: 114px;
     padding-top: 4px;
@@ -390,14 +391,13 @@ a {
     margin-left: auto;
 }
 
-.search input:hover {
+.search .search-date:hover {
     border-color: rgba(235, 235, 235, 1);
     background-color: rgba(235, 235, 235, 1);
 }
 
-.search input:focus {
-    border: 2px solid rgba(229, 229, 229, 1);
-    outline-color: transparent;
+.search .search-date:focus {
+    border: 2px solid rgba(229, 229, 229, 1);    
     background-color: rgba(255, 255, 255, 1);;
 }
 
@@ -441,20 +441,23 @@ a {
 
     cursor: pointer;
 
-    border: none;
-    background-color: red;
+    border: none;    
 
     justify-content: center;
     align-items: center;
 }
 
+.button-element {
+    background-color: transparent;
+    background-image: url('../img/cross-minus.png');
+}
 
 .cross {
-    background: transparent url('../img/cross.png') 50% 50% no-repeat;
+    background-position: -16px -12px;
 }
 
 .minus {
-    background: transparent url('../img/minus.png') 50% 50% no-repeat;
+    background-position: -15px -34px; 
 }
 
 .adults-cross {
@@ -474,23 +477,22 @@ a {
 }
 
 .cross:hover,
-.cross:focus {
-    background: transparent url('../img/cross-hover.png') 50% 50% no-repeat;
+.cross:focus { 
+    background-position: -80px -11px;
 }
 
 .cross:active {
-    background: transparent url('../img/cross-active.png') 50% 50% no-repeat;
+    background-position: -48px -11px;
 }
 
 .minus:hover,
 .minus:focus {
-    background: transparent url('../img/minus-hover.png') 50% 50% no-repeat;
+    background-position: -81px -33px;
 }
 
 .minus:active {
-    background: transparent url('../img/minus-active.png') 50% 50% no-repeat;
+    background-position: -49px -33px;
 }
-
 
 /*Цвет placeholder*/
 ::placeholder {
@@ -508,7 +510,6 @@ a {
     /* Microsoft Edge */
     color: rgba(0, 0, 0, 1);
 }
-
 
 .button {
     font-size: 21px;
@@ -531,8 +532,6 @@ a {
 
     background-color: rgba(129, 179, 210, 1);
 }
-
-
 
 .button-find:hover,
 .button-find:focus {
