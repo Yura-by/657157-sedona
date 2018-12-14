@@ -24,6 +24,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .main-navigation {
     position: relative;
 }
@@ -109,6 +114,11 @@ a {
     padding: 60px 0 27px 0;
 
     background-color: rgba(255, 255, 255, 1);
+}
+
+.features {
+    position: relative;
+    z-index: 4;
 }
 
 .features h2 {
@@ -257,14 +267,18 @@ a {
     background-repeat: no-repeat;
 }
 
-.features {
-    margin-bottom: 50px;
+.center-container {
+    position: relative;
 }
 
 .interested {
     position: relative;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 1);
 
     text-align: center;
+
+    padding-top: 50px;
 }
 
 .interested-question {
@@ -316,8 +330,11 @@ a {
     line-height: 26px;
 
     position: absolute;
-    top: 100%;
+    z-index: 3;
     right: 50%;
+    bottom: 0;
+
+    display: none;
 
     box-sizing: border-box;
     width: 568px;
@@ -331,6 +348,21 @@ a {
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 }
 
+
+.search-show {
+    display: block;
+
+    animation-name: departure;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes departure {             
+    100% {
+        transform: translateY(100%);
+    }
+}
 
 .search-form {
     display: flex;
@@ -543,8 +575,29 @@ a {
     background-color: rgba(84, 150, 189, 1);
 }
 
+.map {
+    position: relative;
+}
+
+.map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.map p {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+}
+
 .main-footer {
     position: absolute;
+    z-index: 3;
     bottom: 6px;
 
     width: 1200px;
@@ -552,6 +605,7 @@ a {
 
     background-color: rgba(255, 255, 255, .9);
 }
+
 
 .inner-page .main-footer {
     position: static;
