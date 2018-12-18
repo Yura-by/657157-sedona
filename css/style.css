@@ -39,8 +39,6 @@ img {
     top: 0;
     left: 50%;
 
-    width: 140px;
-    height: 71px;
     margin-left: -70px;
 }
 
@@ -103,6 +101,8 @@ img {
 .welcome-text {
     padding: 76px 0 79px;
 
+    text-align: center;
+
     background-color: rgba(32, 50, 64, 1);
     background-image: url("../img/polygon.svg"),
     url("../img/bg.jpg");
@@ -110,10 +110,8 @@ img {
     background-position: center bottom, center -56px;
 }
 
-.welcome-text p {
-    width: 459px;
-    height: 353px;
-    margin: 0 auto;
+.welcome-text img {
+    vertical-align: bottom;
 }
 
 .welcome-lid {
@@ -186,8 +184,6 @@ img {
 }
 
 .feature-item-image {
-    width: 800px;
-    height: 256px;
     margin: 0;
 }
 
@@ -384,8 +380,8 @@ img {
 
     -webkit-animation-name: departure;
             animation-name: departure;
-    -webkit-animation-duration: .8s;
-            animation-duration: .8s;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
 
@@ -443,7 +439,9 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 346px;
-    padding: 4px 40px 4px 11px ;
+    height: 38px;
+    margin-left: auto;
+    padding: 4px 40px 4px 11px;
 
     text-transform: uppercase;
 
@@ -490,12 +488,14 @@ img {
 
 .calendar {
     position: absolute;
+    top: 50%;
     right: 9px;
 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
+    margin-top: -11px;
     padding: 0;
 
     cursor: pointer;
@@ -526,6 +526,7 @@ img {
 
 .button-element {
     position: absolute;
+    top: 50%;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -533,6 +534,7 @@ img {
 
     width: 11px;
     height: 11px;
+    margin-top: -5px;
 
     cursor: pointer;
 
@@ -1199,8 +1201,6 @@ img {
 }
 
 .hotel-photo {
-    width: 135px;
-    height: 90px;
     margin: 0;
 }
 
