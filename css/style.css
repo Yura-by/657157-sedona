@@ -327,16 +327,15 @@ img {
     font-weight: 700;
     line-height: 26px;
 
+    display: block;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 568px;
+    margin: 0 auto;
     padding: 30px;
 
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-
     color: rgba(255, 255, 255, 1);
-    border: none;
     background-color: rgba(118, 99, 87, 1);
 }
 
@@ -647,7 +646,7 @@ img {
 
 .button-find:hover,
 .button-find:focus {
-    background-color: rgba(102, 158, 192);
+    background-color: rgba(102, 158, 192, 1);
 }
 
 .button-find:active {
@@ -1338,11 +1337,8 @@ img {
 .inner-column:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;        
+    display: flex;    
 
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1356,6 +1352,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;    
+
+    margin-bottom: 46px;
 }
 
 .rating {
