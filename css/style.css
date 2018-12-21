@@ -886,39 +886,45 @@ img {
     list-style: none;
 }
 
-.filter li {
+.filer-form-option {
     display: block;
 
     margin-bottom: 25px;
+    padding-left: 40px;
 }
 
 .filter-checkbox {
     position: relative;
 
-    padding-top: 2px;
-    padding-left: 40px;
+    display: block;
 
     cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
-.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+.filter-checkbox::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -40px;
 
     width: 23px;
     height: 23px;
 
+    content: "";
+
     background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+.filer-form-option input[type="checkbox"]:checked + .filter-checkbox::before {
     width: 27px;
 
     background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
-.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+.filer-form-option input[type="checkbox"]:focus + .filter-checkbox::before {
     border-color: #663d15;
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -966,20 +972,24 @@ img {
     font-size: 14px;
     line-height: 30px;
 
+    cursor: pointer;
+}
+
+.min-price-wrapper,
+.max-price-wrapper {
     display: inline-block;
 
-    cursor: pointer;
+    width: 82px;
+    margin: 0;
+    padding-left: 65px;
+
     vertical-align: top;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-    width: 82px;
-    padding-left: 65px;
-}
-
 .price-controls input {
-    font: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 30px;
 
     width: 50px;
     margin: 0;
@@ -1337,7 +1347,7 @@ img {
 .inner-column:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
+    display: flex;       
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1351,7 +1361,7 @@ img {
 .stars-list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
+    display: flex;
 
     margin-bottom: 46px;
 }
@@ -1365,7 +1375,7 @@ img {
 }
 
 .hotel-title:hover,
-.result-item .hotel:focus {
+.hotel-title:focus {
     color: rgba(129, 179, 210, 1);
 }
 
